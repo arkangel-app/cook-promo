@@ -1,0 +1,1902 @@
+@font-face {
+  font-family: oreo-sans-black;
+  src: url('./fonts/OreoSansBlack.eot');
+  src: url('./fonts/OreoSansBlack.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OreoSansBlack.woff') format('woff'),
+       url('./fonts/OreoSansBlack.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: oreo-sans-bold;
+  src: url('./fonts/OreoSansBold.eot');
+  src: url('./fonts/OreoSansBold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OreoSansBold.woff') format('woff'),
+       url('./fonts/OreoSansBold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: oreo-sans-light;
+  src: url('./fonts/OreoSansLight.eot');
+  src: url('./fonts/OreoSansLight.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OreoSansLight.woff') format('woff'),
+       url('./fonts/OreoSansLight.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: oreo-sans-medium;
+  src: url('./fonts/OreoSansMedium.eot');
+  src: url('./fonts/OreoSansMedium.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OreoSansMedium.woff') format('woff'),
+       url('./fonts/OreoSansMedium.ttf')  format('truetype');
+}
+/*--------ANIMACIONES-------------*/
+
+
+li{
+ animation-duration: 3s;
+}
+
+.insta-img{
+  animation-delay: 4s;
+  animation-iteration-count: 5;
+}
+
+.card{
+  animation-delay: 0.3s;
+}
+
+.premios{
+  animation-iteration-count: 3;
+}
+
+/*-----------------------*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      color: black;
+      min-width: 160px;
+      -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 10;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: oreo-sans-medium;
+      margin-left: -110px;
+      margin-top: 15px;
+      border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid white;
+  position: absolute;
+  top:-9px;
+  right:40px;
+}
+
+.ant-btn{
+  height: inherit;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+}
+
+
+
+body{
+  background-image: url('./images/bg.jpg');
+  background-repeat: repeat-y;
+/*  background-position: bottom;
+  background-size: cover;*/
+  color:white;
+  overflow-x: hidden;
+}
+
+.row-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,h2{
+  font-family: oreo-sans-black;
+  text-align: center;
+}
+
+p{
+  font-family: oreo-sans-medium;
+}
+
+/*--Menu---*/
+
+
+button.ant-btn.cerrarSesion{
+  width: 92%;
+}
+
+button.ant-btn.cerrarSesion:active, button.ant-btn.cerrarSesion:hover{
+      background: #e25a85;
+      color: white;
+}
+
+.row.menu-app {
+    margin-top: 20px;
+}
+
+#navbar{
+  font-family : oreo-sans-bold;
+  font-size : 18px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: left;
+  justify-content: center;
+}
+
+.sesion-icon{
+  display: none;
+}
+
+
+li {
+    padding-right: 10px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.navbar-nav{
+    flex-direction: unset;
+    justify-content: center;
+    display: flex;
+    -ms-flex-direction: row;
+}
+
+a{
+  color:white;
+  text-shadow: 0px 3px 4px #00000069;
+}
+
+
+img.brand-logo {
+    width: 100%;
+}
+
+.brand-content {
+    text-align: left;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+a.active {
+    text-decoration: none;
+}
+
+.b-menu:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+a.b-item {
+    background-image: url(./images/nube.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -3px;
+
+}
+
+a.b-item2 {
+    background-image: url(./images/nube2.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-y: -2.5px;
+    background-position-x: 7px;
+    line-height: 18px;
+    min-height: 70px;
+}
+
+li.como {
+    text-align: center;
+    width: 152px;
+    margin-top: -5px;
+}
+
+a.b-item3 {
+    background-image: url(./images/nube3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 2px;
+}
+
+a.b-participar {
+    background: #e25a85;
+    border-radius: 8px;
+    width: 130px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+img.sesion-img {
+    width: 40px;
+    margin-top: -10px;
+}
+/*--Banner---*/
+
+img.banner-img{
+  width: 100%;
+}
+
+.btn-home {
+    background: #e25a85;
+    color: white;
+    font-family: oreo-sans-bold;
+    box-shadow: 0px 2px 3px 1px #0000006b;
+}
+
+.btn-home:hover{
+  box-shadow: none;
+}
+
+.crea-bn{
+  max-width: 450px
+}
+
+.let-bn{
+  max-width: 450px;
+  text-align: center;
+}
+
+.part{
+  padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.btn-line.rose {
+    background: #f781a6;
+    margin-top: -3px;
+}
+/*--Galeria-recetas---*/
+
+.caja-insta {
+    text-align: center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.caja-insta.recetas {
+    max-width: 400px;
+}
+
+.full-w{
+   width: 100vw;
+   position: relative;
+   left: 50%;
+   right: 50%;
+   margin-left: -50vw;
+   margin-right: -50vw;
+  /* background: white;*/
+}
+
+span.tblanco{
+  color: white;
+}
+
+.blanco{
+
+  background: white;
+}
+
+h3.tit-home {
+    font-family: oreo-sans-bold;
+    font-size: 46px;
+    line-height: 55px;
+    color: #51c6f9;
+    text-align: center;
+}
+
+.galleria-home{
+  justify-content: center;
+  background-color: white;
+  padding-top:20px;
+}
+
+img.receta-img{
+  width: 100%;
+}
+
+.receta{
+max-width: 350px;
+text-align: center;
+}
+
+.col.titulo {
+    padding-top: 40px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    flex: unset;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #51c6f9;
+    font-family: oreo-sans-medium;
+}
+
+.card-img-top {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    min-height: 1px;
+}
+
+/*--Bottom-home--*/
+
+.btn-line.lblue {
+    background: #85ddfb;
+    margin-top: -2px;
+}
+
+.boton-recetas{
+      font-family: oreo-sans-bold;
+      text-shadow: 0px 3px 4px #00000045;
+      background: #51c6f9;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      margin: 0 10px
+
+}
+
+.centrado{
+  text-align: center;
+}
+
+.caja-btn-recetas{
+  justify-content: center;
+  padding: 50px 0 20px 0;
+}
+
+.btn:hover{
+  text-shadow: none;
+}
+
+.btn-home-r{
+      box-shadow: 0px 2px 4px 0px #000b3e73;
+      font-size: 25px;
+}
+
+.btn-home-r:hover{
+      box-shadow: none;
+}
+
+/*--Footer--*/
+
+
+p.resp.txt-dato.ganador-txt {
+    max-width: 550px;
+    margin: auto;
+}
+
+footer {
+    background-position: top;
+    color: white;
+    padding: unset;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+img.foot-img {
+    width: 100%;
+}
+
+button.btn.btn-shop {
+    color: white;
+    background: #a65ab1;
+    font-family: oreo-sans-bold;
+    margin-top: 25px;
+    border-radius: unset;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px 25px 15px 25px;
+}
+
+.my-footer {
+    background-color: #061762;
+    margin-top: -20px;
+    align-items: center;
+}
+
+i.fa.fa-shopping-cart {
+    padding-bottom: 12px;
+    padding-right: 10px;
+}
+
+span.txt-footer {
+    color: #40bbe6;
+    font-size: 20px;
+    font-family: none;
+    font-weight: 900;
+}
+
+a.b-ft {
+    font-family: oreo-sans-bold;
+    font-size: initial;
+}
+
+a.b-ft:hover{
+  text-decoration: none;
+  color: #40bbe6;
+}
+
+.imgEcom{
+  width: 30%;
+}
+
+.caja-ecom{
+  max-width:150px;
+}
+.dropdown-content.dropdownComprar{
+  margin: auto;
+  border-radius: unset;
+  background: #a65ab1;
+  margin-top: -25px;
+  position: relative;
+  margin-left: unset;
+  margin-right: unset;
+      box-shadow: unset;
+}
+
+.caja-ecom {
+    max-width: 130px;
+    text-align: center;
+    background: white;
+    border-radius: 14px;
+    padding: 5px;
+    margin: auto;
+}
+
+.dBoton:hover{
+  margin-top: -155px;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+.btn-line{
+  background: #c47fcc;
+  height: 3px;
+  margin: auto;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+/*como-participar*/
+
+span.bold-text {
+    font-family: oreo-sans-bold;
+    font-weight: bold;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+
+.light-text.first-txt.txt{
+  font-size: 26px;
+}
+
+span.bold{
+  font-family: oreo-sans-bold;
+}
+
+span.bold-t {
+    font-family: oreo-sans-bold;
+    font-size: 23px;
+}
+
+.t-yellow {
+    color: #FFDA9B;
+    font-size: 17px;
+}
+
+
+.light-text.txt {
+    font-family: oreo-sans-medium;
+    font-size: 23px;
+    line-height: 30px;
+    color: #50C6FA;
+}
+
+.small-txt{
+  font-family: oreo-sans-bold;
+  font-size: 15px;
+  line-height: 17px;
+  color: white;
+  margin-bottom: -5px;
+}
+
+span.light2-text.new {
+    font-size: 16px;
+    margin-top: -10px;}
+
+.light-t.t-yellow {
+    line-height: 23px;
+}
+
+span.light2-text{
+line-height: 32px;
+color: white;
+}
+
+  .left.yellow-letter {
+      max-width: 360px;
+      margin: auto;
+  }
+
+img.img-y-letter {
+    width: 100%;
+}
+
+img.img-app-logo {
+    width: 100%;
+}
+
+.left.app-oreo {
+    max-width: 400px;
+    margin: auto;
+}
+
+.caja-como{
+      justify-content: center;
+}
+
+.row-galleta {
+    align-items: center;
+}
+
+img.img-galleta {
+    width: 100%;
+}
+
+.right.galleta {
+  max-width: 200px;
+}
+
+span.bold-text.new {
+    font-size: 18px;
+    line-height: 2px;
+}
+
+
+
+/*-----FAQ----*/
+p.resp {
+    font-family: oreo-sans-medium;
+    text-align: justify;
+    color: white;
+}
+
+.tit {
+    font-family: oreo-sans-black;
+    font-size: 50px;
+    color: #FFDA9B;
+}
+.tit2 {
+    font-family: oreo-sans-black;
+    font-size: 40px;
+    color: #FFDA9B;
+    text-align: left;
+}
+
+li.numFaq{
+      color: #FFDA9B;
+}
+
+li.num {
+    font-family: oreo-sans-bold;
+}
+
+p.pregunta {
+    font-size: larger;
+}
+
+/*-----wizard------*/
+
+.steps ul {
+    padding-left: unset;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.steps ul li {
+    position: relative;
+    list-style: none;
+    display: inherit;
+    align-items: center;
+    margin-right: 3
+    %;
+}
+
+.msg{
+  color: white;
+}
+
+
+.mini-brand-img{
+  max-width: 100%;
+}
+.dots{
+  max-width: 57%;
+  vertical-align: middle;
+}
+
+.step{
+  font-size: xx-large;
+  font-family: oreo-sans-bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.step {
+    top: 13%;
+    position: absolute;
+  }
+
+  img.step-img {
+      max-width: 100%;
+  }
+
+  img.mini-brand-img {
+      max-width: 100px;
+  }
+
+  .forgot{
+    font-family: oreo-sans-medium;
+    text-shadow: none;
+    text-align: center;
+  }
+
+  .forgot:hover{
+    color:#51c6f9;
+
+  }
+
+  button.ant-btn.forgot {
+    background: none;
+    border: none;
+    color: white;
+    margin-top: 15px;
+  }
+button.ant-btn.forgot:hover {
+  color:#FFDA9B;
+}
+
+.white-tit {
+    color: white;
+}
+
+  span.step {
+    position: absolute;
+    left: 28%;
+    top: 15%;
+    text-align: center;
+    justify-content: center;
+}
+
+.codText{
+      color: #FFDA9B;
+      font-family: oreo-sans-medium;
+      line-height: 16px;
+      margin-bottom: 5px;
+}
+
+.titCod{
+  margin-bottom: 25px;
+}
+
+.codBox {
+    vertical-align: middle;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.wizard{
+  background: #0c59bd;
+  position: relative;
+}
+
+.codImg{
+  max-width: 100px;
+}
+
+
+/*crema wizard*/
+  img.mancha {
+    position: absolute;
+    z-index: -1;
+    max-width: 220px;
+  }
+
+  img#m-right {
+      right: -38px;
+      top: 60px;
+  }
+
+  img#m-top {
+    top: -25px;
+    left: 32%;
+    max-width: 280px;
+  }
+
+  img#m-left {
+      left: -56px;
+      bottom:  10%;
+      max-width: 280px;
+  }
+
+  img#m-bottom {
+      bottom: -35px;
+      right: 30%;
+  }
+
+form {
+    font-family: oreo-sans-medium;
+}
+
+.ant-form-item-label > label{
+  color: white;
+}
+
+.centrado{
+  justify-content: center;
+}
+
+/*---------MODAL--------*/
+
+.sesionmd{
+top: 25px;
+right: 10%;
+left: inherit;}
+
+.ant-modal-content {
+    background:#0c59bd;
+    color: white;
+    font-family: oreo-sans-medium;
+}
+
+.ant-modal-title {
+    font-family: oreo-sans-bold;
+    font-size: 20px;
+    color: #FFDA9B;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ant-modal-close-x{
+    color: white;
+}
+
+.ant-modal-footer{
+  border: none;
+  padding-top: inherit;
+}
+
+.ant-modal-header {
+    border-bottom: none;
+    background: none;
+}
+.ant-modal-body{
+padding-bottom: 10px;}
+
+button.ant-btn.btn.btn-lg.boton-recetas.modal-btn.ant-btn-lg:hover{
+  background:#51c6f9;
+  color: black;
+  box-shadow: none;
+
+}
+
+.modalsesion>.ant-modal-footer{
+  background: white;
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted #000;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+.container.bg {
+    background: #0a52b9;
+        padding-right: 30px;
+}
+
+span.correo{
+  color: #FFDA9B;
+}
+
+.linkTxt{
+  color: #FFDA9B;
+  text-shadow: unset;
+}
+.linkTxt:hover{
+  color: #50C6FA;
+}
+
+table.table {
+    color: white;
+}
+.th{
+  color:wheat;
+}
+
+td.premio {
+    max-width: 650px;
+    font-family: oreo-sans-medium;
+}
+
+.bases{
+  background: #084cb5;
+}
+
+.forgot-ses {
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+.bold-txt {
+    font-family: oreo-sans-bold;
+}
+
+/*------CONTACTO-------*/
+p.resp.txt-dato.correo {
+    font-size: 25px;
+}
+
+p.resp.txt-contacto {
+    font-family: oreo-sans-medium;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+p.resp.txt-dato {
+    font-family: oreo-sans-bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFDA9B;
+    text-align: center;
+}
+
+p.resp.txt-dato.puntos {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+img.img-line-contacto {
+    max-height: 510px;
+}
+
+.col-line {
+text-align: center;
+}
+
+/*registro*/
+div#sheet-register {
+    padding: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.p-txt {
+    font-size: 11px;
+}
+
+.btn-reg-col {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.container.participando {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.resp.txt-dato.white {
+    font-size: x-large;
+}
+
+
+.strech1{
+  line-height: 35px;
+}
+
+.strech2{
+      line-height: 20px;
+      color: white;
+
+}
+
+/*UPLOAD IMAGE*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.texto-brw{
+  color: white;
+  font-family: oreo-sans-bold;
+}
+
+.left-browser{
+  border-radius:10px;
+  margin: auto;
+}
+
+.ant-upload-list-item-info {
+    background: white;
+}
+
+.form-group.caja-img {
+    color: rebeccapurple;
+    /* box-shadow: 0 0 black; */
+    border-color: white;
+    border-style: dotted;
+    border-width: 3px;
+    padding: 15px;
+}
+
+input.form-control.file-name-txt {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.caja-b {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.input-group.borde-blanco {
+    border: white;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.form-group.py-3.receta-n {
+    width: 400px;
+    margin: auto;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+.txt-participando{
+      padding: 40px 25% 0px 25%;
+}
+
+p.resp.txt-dato.white-txt{
+  padding: 0px 15% 20px 15%;
+  font-size: 22px;
+  color:white;
+}
+
+p.resp.txt-dato.white-txt.int{
+    line-height: 28px;
+}
+button.btn.btn-lg.boton-recetas.omitir-btn {
+    background: #05388d;
+  }
+
+  .omitir-btn:hover {
+      color: #51c6f9;
+    }
+
+    .gallery {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+
+
+    .picsMason{
+      width: 25%;
+      padding: 8px 10px;
+    }
+    .picsMason .card{
+      background: none;
+    }
+
+    .lazy-load-image-background.blur{
+      width: 100%;
+    }
+
+    .card-body.gallery-card{
+      padding:  10px;
+    }
+
+    .pack-img{
+      max-width: 250px;
+    }
+
+    .caja-img{
+      text-align: center;
+    }
+
+    h2.tit.productos {
+    font-size: 40px;
+    padding-bottom: 20px;
+    }
+
+    .peso-galleta{
+      font-family: oreo-sans-bold;
+    }
+
+    .recover-box {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 450px;
+    }
+
+
+    .ant-form-item-required::before{
+          color: #51c6f9;
+    }
+
+    .ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active{
+    background: #30b3ec;
+    color: black;
+    text-shadow: none;
+        border-color: unset;
+    }
+
+    .btn.focus, .btn:focus{
+      box-shadow: unset;
+    }
+
+    a:focus {
+    text-decoration: none;
+  }
+
+    label.ant-form-item-required {
+        color: white;
+        font-size: medium;
+    }
+
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+    color: #ffda9b;
+  }
+
+
+  label.ant-checkbox-wrapper {
+      color: white;
+  }
+
+  .ant-row.ant-form-item.ch {
+    margin-bottom: unset;
+}
+
+  .term {
+      text-decoration: underline;
+  }
+
+  .term:hover{
+    color:#51c6f9;
+  }
+
+  .success:focus {
+      border:1.5px solid #51c6f9;
+ }
+
+
+/*-----PREMIOS--------------*/
+.premios-title {
+    margin-bottom: unset;
+    margin-left: 20px;
+}
+.logo-box {
+    max-width: 150px;
+}
+
+.premios{
+  width: 100%
+}
+
+img.premiosLinea {
+    height: 200px;
+}
+
+.banner-box {
+    max-width: 350px;
+}
+
+.linea {
+    text-align: center;
+}
+
+.premio-tit {
+    font-family: oreo-sans-bold;
+    font-size: 19PX;
+    line-height: 20px;
+    text-align: center;
+}
+
+img.premios {
+    padding-bottom: 10px;
+}
+
+.premio-tit2 {
+    font-family: oreo-sans-medium;
+    font-size: 16px;
+    color: #FFDA9B;
+    text-align: center;
+}
+
+.txt-light{
+  font-family: oreo-sans-light;
+}
+
+.miniText{
+  font-family: oreo-sans-light;
+  text-align: center;
+}
+
+.btn-rwd{
+  display: none;
+}
+
+.brand-content {
+    text-align: left;
+    max-width: 300px;
+}
+
+.bluetxt{
+  color:#50C6FA;
+}
+
+.txt-dato.ganador-txt{
+margin-bottom: unset;
+}
+
+.txt-flag{
+    background-image: url('./images/flag.png');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position: center;
+    font-family: oreo-sans-bold;
+    font-size: 22px;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 560px;
+}
+
+
+.premio-foto {
+    max-width: 250px;
+    margin: auto;
+}
+
+img.img-p {
+    width: 100%;
+}
+
+
+/*_____RESPONSIVE______*/
+
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+
+    h2.tit.productos{
+      font-size: 30px;
+      padding-top: 30px;
+      margin-bottom: -30px;
+    }
+
+
+    }
+
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+
+    p.resp.txt-dato.correo {
+    font-size: 18px;
+    }
+
+.bases {
+    background: unset;
+    }
+
+    .container.bg {
+    background: unset;
+    padding-right: 25px;
+    }
+    }
+
+  @media(min-width:1640px){
+    body{
+      background-size: cover;
+    }
+  }
+
+  @media(min-width:845px) and (max-width:1091px){
+    .codBox {
+      justify-content: center;
+      position: absolute;
+      right: 9%;
+      top: 33%;
+  }
+  }
+
+  @media(min-width:1092px){
+    .codBox {
+      vertical-align: middle;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      right: 19%;
+      top: 33%;
+  }
+
+
+  }
+
+@media(min-width:1090px){
+
+  .my-footer {
+    margin-top: -50px;
+  }
+
+  .s4 {
+    margin-left: 8px;
+  }
+}
+
+
+
+
+@media(min-width:992px)  {
+  .dots{
+    padding: 8px;
+  }
+  span.step{
+    left: 25%;
+  }
+
+  button.btn.btn-lg.boton-recetas.omitir-btn{
+  position: absolute;
+  right: -20%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1445px){
+  .navbar-nav {
+    flex-direction: unset;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+  .pack-img {
+      max-width: 200px;
+  }
+}
+
+@media(max-width:991px){
+
+  .paddint{
+    margin-top: 1rem;
+  }
+
+  #sheet-login {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+  .col-line {
+      display: none;
+  }
+
+
+  li.ses{
+    display: none;
+  }
+
+  .sesion-icon{
+    display: block;
+
+  }
+
+
+.bloque-txt {
+    margin-top: 30px;
+}
+
+.tit-row {
+    flex-direction: row-reverse;
+}
+
+.left.app-oreo {
+    max-width: 200px;
+  }
+
+  .rwd-pt{
+      padding-top: 2rem!important;
+  }
+
+ .des{
+   display: none;
+ }
+
+}
+
+@media(max-width:929px){
+  .codBox{
+    padding-bottom: 10px;
+  }
+}
+
+
+@media(min-width:769px){
+  .sesion-icon {
+      top: 40%;
+      position: absolute;
+      right: 10%;
+  }
+}
+
+
+
+@media(min-width:768px) and (max-width:990px){
+button.btn.btn-lg.boton-recetas.omitir-btn {
+    position: absolute;
+    right: 15px;
+}}
+
+@media(max-width:768px){
+
+  .participar-m{
+    margin-top: 20px
+  }
+  .row.menu-app {
+      margin-top: unset;
+
+    }
+
+  img.mini-brand-img {
+      max-width: 80px;
+  }
+
+  span.step {
+      top: 13%;
+      left: 33%;
+  }
+
+  img.step-img {
+      max-width: 80px;
+  }
+
+  h3.tit-home{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+
+  .des{
+    display: none;
+  }
+
+  li.participar-m {
+    display: none;
+}
+
+.btn-rwd{
+  display: block;
+  font-family: oreo-sans-bold;
+  font-size: 18px;
+    color: white;
+    text-shadow: 0px 3px 4px #00000069;
+    padding: 10px 15px;
+}
+
+.brand-content {
+    text-align: left;
+    max-width: 250px;
+}
+
+.main {
+    display: inline-flex;
+}
+
+.r-main{
+align-items: center;
+}
+
+img.sesion-img {
+    margin-top: unset;
+}
+
+.sesion-icon {
+    position: absolute;
+    right: 10%;
+}
+}
+
+@media (min-width:491px) and (max-width:767px){
+  .txt-flag{
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width:545px){
+#navbar{
+  padding: unset;
+  font-size: 15px;
+}
+
+li {
+    padding-right: unset;
+}
+
+li.como{
+  max-width: 110px;
+}
+
+a.b-item2{
+  padding-top: 6px!important;
+}
+}
+
+@media (max-width:575px){
+
+  ol {
+      padding-left: 10px;
+  }
+
+  li.num {
+    font-family: oreo-sans-bold;
+    font-size: 14px;
+  }
+  .tit{
+    font-size: 30px;
+  }
+
+  p.resp.txt-dato.reg-tit{
+    font-size: 25px;
+  }
+
+  .tit-row {
+      flex-direction: column-reverse;
+  }
+  .condiciones-txt{
+        padding: 20px;
+  }
+
+  .faq {
+      margin-left: 10px;
+  }
+
+  .bases{
+    font-size: 20px;
+  }
+
+  img.mini-brand-img {
+      max-width: 52px;
+  }
+
+  span.step{
+    top: 0;
+    left: 18%;
+  }
+
+  img.step-img {
+      max-width: 50px;
+  }
+
+  .linea{
+    display:none;
+  }
+
+  .mancha {
+      display: none;
+  }
+}
+
+@media(min-width:546px) and (max-width:768px){
+  a.b-participar.b-menu.btn-rwd {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.brand-content {
+
+    max-width: 180px;
+}
+
+}
+
+@media (max-width:545px) {
+  .r-main {
+      align-items: center;
+      left: 0;
+      right: 0;
+      margin: auto;
+  }
+
+  .sesion-icon {
+    position: relative;
+     right: unset;
+}
+
+.brand-content {
+    max-width: 160px;
+}
+
+}
+
+@media (max-width:542px) {
+  a.btn.btn-lg.boton-recetas.new-cod {
+      margin-top: 20px;
+  }
+
+a.btn.boton-recetas.btn-home-r{
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width:485px) {
+  .btn-foto{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:375px) {
+
+.btn-foto {
+    font-size: 10px;
+    padding: unset;
+}
+
+i.anticon.anticon-upload {
+    display: none;
+}
+
+ant-btn > .anticon + span, .ant-btn > span + .anticon {
+    margin-left: unset;
+}
+}
+
+@media (min-width:482px) {
+  button.btn.btn-lg.boton-recetas.new-cod {
+          margin-left:10px;
+  }
+}
+
+@media (max-width:491px){
+  button.btn.btn-lg.boton-recetas.new-cod {
+          margin-top: 10px;
+  }
+
+  p.resp.txt-dato.txt-participando {
+      padding: 30px 10px 0px 10px;
+      font-size: 30px;
+      line-height: 30px;
+  }
+  p.resp.txt-dato.white-txt {
+      padding: 0px 15% 10px 15%;
+      font-size: 18px;
+
+  }
+
+.int{
+    line-height: 18px;
+}
+
+  h2.white-tit {
+      font-size: 25px;
+  }
+
+}
+
+@media (max-width:490px){
+.txt-flag{
+    background-image: url('./images/flag-03.png');
+    font-size: 19px;
+    background-size: 95%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media (max-width:430px){
+
+  .caja-insta {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+  p.resp.txt-dato.ganador-txt {
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.txt-flag{
+  font-size: 15px;
+  line-height: 19px;
+  background-size: 100%;
+  padding-left: inherit;
+  padding-right: inherit;
+}
+
+  .arrow-up{
+        right: 12px;
+  }
+
+  .dropdown-content{
+    margin-left: -145px;
+    margin-top: 25px;
+  }
+
+  .texto-brw {
+    font-size: small;
+}
+
+.miniBtn{
+  padding: 5px 15px;
+    font-size: 1rem;
+}
+
+  .navbar-nav{
+    justify-content: center;
+  }
+
+  li.participar-m {
+    width: 100%;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+    margin-top: 5px;
+}
+
+.right.galleta {
+  max-width: 100px;
+}
+
+img.mini-brand-img {
+    max-width: 52px;
+}
+
+span.step {
+    top: 10%;
+    left: 28%;
+}
+
+.step{
+  font-size: x-large;
+}
+
+img.step-img {
+    max-width: 50px;
+}
+
+
+
+.sesion-icon{
+  right: 5%;
+}
+
+img.sesion-img {
+    width: 32px;
+}
+
+
+
+}
+
+@media(max-width:410px){
+#navbar{
+font-size: 12px;
+}
+}
+
+@media(max-width:400px){
+
+  .faq {
+    margin-left: 5px;
+  }
+
+  ol {
+    padding-left: 5px;
+}
+
+.table td, .table th {
+    padding: 5px;
+}
+
+  body{
+    background: #0646b1;
+  }
+
+  a.b-participar.b-menu.btn-rwd {
+      font-size: 12px;
+      width: auto;
+      height: inherit;
+      padding:5px 5px 5px 5px;
+  }
+
+  .brand-content {
+    max-width: 130px;
+}
+
+li.como {
+    max-width: 90px;
+}
+
+a.b-item2.b-menu {
+    line-height: 12px;
+    padding: unset;
+}
+.crea-bn {
+    max-width: 450px;
+    margin-top: -10px;
+}
+}
+
+@media(max-width:380px){
+  span.bold-text{
+    font-size: 32px;
+  }
+
+  .small-txt{
+    font-size: 12px;
+  }
+}
+
+@media(max-width:370px){
+  table.table {
+    font-size: 11px;
+}
+
+p.resp.txt-dato.ganador-txt {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+a.btn.boton-recetas.btn-home-r{
+  font-size: 12px;
+}
+}
+@media(max-width:320px){
+
+
+  li.como{
+    margin-top: unset;
+  }
+
+  #navbar {
+    font-size: 10px;
+}
+
+.col-lg-8.col-xs-12.pb-3 {
+    padding-bottom: unset!important;
+}
+}
+
+
+.fotoContainer .ant-form-item{
+  margin-bottom: 0px;
+}
+
+.contenedorProgress{
+  max-width: 450px;
+  margin: auto;
+}
+.progressUpload .ant-progress-text{
+  color: white;
+}
+
+.contenedorImagenReceta img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.contenedorImagenRecetaSmall img{
+  width: 100%;
+  height: 236px;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+.contenedorImagenRecetaBig img{
+  width: 100%;
+  height: 536px;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+
+@media (max-width:960px) {
+  .picsMason{
+    width: 50%;
+  }
+}
+@media (max-width:590px) {
+  .picsMason{
+    width: 100%;
+  }
+}
+
+@media (min-width:576px) and (max-width:808px) {
+      .dropdown.dBoton.btn-c{padding-top: 20%;}
+}
